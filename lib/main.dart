@@ -9,16 +9,23 @@ import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-part 'core/api_and_models.dart';
+part 'core/api_client.dart';
+part 'models/asset_data.dart';
 part 'screens/app_shell.dart';
-part 'widgets/shared_widgets.dart';
+part 'widgets/app_header.dart';
+part 'core/presentation_utils.dart';
+part 'widgets/asset_row.dart';
+part 'widgets/async_views_and_sorting.dart';
 part 'screens/favorites_page.dart';
 part 'screens/holdings_page.dart';
 part 'screens/market_page.dart';
 part 'screens/alerts_page.dart';
 part 'screens/settings_page.dart';
 part 'screens/asset_detail_page.dart';
-part 'dialogs/dialogs.dart';
+part 'widgets/detail_helpers.dart';
+part 'dialogs/api_url_dialog.dart';
+part 'dialogs/holding_dialog.dart';
+part 'dialogs/price_alert_dialog.dart';
 
 const bg = Color(0xFF0D1424);
 const navBg = Color(0xFF10192B);
