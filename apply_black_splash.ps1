@@ -1,0 +1,1 @@
+$res=".\android\app\src\main\res";Copy-Item ".\android\app\src\main\res\values\styles.xml" "$res\values\styles.xml" -Force;New-Item -ItemType Directory "$res\values-v31" -Force|Out-Null;Copy-Item ".\android\app\src\main\res\values-v31\styles.xml" "$res\values-v31\styles.xml" -Force;Write-Host "Svart startbild installerad."

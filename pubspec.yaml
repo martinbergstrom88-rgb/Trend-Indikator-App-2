@@ -1,0 +1,40 @@
+name: trading_indicator
+description: Trading Indicator
+publish_to: none
+version: 5.2.6+24
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  url_launcher: ^6.3.1
+  shared_preferences: ^2.3.3
+  intl: ^0.20.1
+  firebase_core: ^4.1.0
+  firebase_messaging: ^16.0.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.2
+  flutter_native_splash: ^2.4.6
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/app_icon.png
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/app_icon.png
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: assets/app_icon.png
+  adaptive_icon_foreground_inset: 18
+  remove_alpha_ios: true
+flutter_native_splash:
+  color: "#000000"
+  image: assets/app_icon.png
+  android_12:
+    color: "#000000"
+    image: assets/app_icon.png
+    icon_background_color: "#000000"

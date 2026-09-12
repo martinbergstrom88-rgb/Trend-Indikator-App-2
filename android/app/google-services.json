@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "592454501705",
+    "project_id": "trading-indicator-b9dd1",
+    "storage_bucket": "trading-indicator-b9dd1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592454501705:android:dab2725ec93f3d9f274698",
+        "android_client_info": {
+          "package_name": "se.martinbergstrom.trend_indikator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlDxQQzLVi8ynRiVcjSyLX8wp454NnpEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

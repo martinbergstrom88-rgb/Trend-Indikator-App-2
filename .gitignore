@@ -1,0 +1,32 @@
+# Flutter/Dart genererat
+.dart_tool/
+.packages
+.pub/
+build/
+coverage/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android lokalt/genererat
+android/.gradle/
+android/local.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# iOS/macOS genererat
+ios/Pods/
+ios/.symlinks/
+macos/Pods/
+macos/.symlinks/
+
+# Editor
+.idea/
+.vscode/
+*.iml
+
+# Tillfälligt
+*.log
+*.tmp
+*.bak
+*.zip
