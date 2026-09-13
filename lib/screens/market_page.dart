@@ -33,6 +33,13 @@ class _MarketPageState extends State<MarketPage> {
     await result;
   }
 
+  Future<void> addProduct() async {
+    final created = await showAddProductDialog(context, widget.api);
+    if (!created || !mounted) return;
+    await load(refresh: true);
+    widget.onDataChanged();
+  }
+
   @override
   Widget build(c) => Column(
         children: [
@@ -40,6 +47,7 @@ class _MarketPageState extends State<MarketPage> {
             'Marknad',
             subtitle: 'Sök och hantera tillgångar',
             onRefresh: () => load(refresh: true),
+            onAdd: addProduct,
             onSort: () async {
               final value = await chooseSort(c, sort);
               if (value != null) setState(() => sort = value);

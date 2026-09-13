@@ -7,13 +7,17 @@ class Header extends StatelessWidget {
     this.subtitle,
     this.onRefresh,
     this.onSort,
+    this.onAdd,
   });
+
   final String title;
   final String? subtitle;
   final VoidCallback? onRefresh;
   final VoidCallback? onSort;
+  final VoidCallback? onAdd;
+
   @override
-  Widget build(BuildContext c) => Padding(
+  Widget build(BuildContext context) => Padding(
         padding: const EdgeInsets.fromLTRB(20, 18, 16, 12),
         child: Row(
           children: [
@@ -40,15 +44,29 @@ class Header extends StatelessWidget {
                   if (subtitle != null)
                     Text(
                       subtitle!,
-                      style: const TextStyle(color: muted, fontSize: 12),
+                      style: const TextStyle(
+                        color: muted,
+                        fontSize: 12,
+                      ),
                     ),
                 ],
               ),
             ),
             if (onSort != null)
-              IconButton(onPressed: onSort, icon: const Icon(Icons.sort)),
+              IconButton(
+                tooltip: 'Sortera',
+                onPressed: onSort,
+                icon: const Icon(Icons.sort),
+              ),
+            if (onAdd != null)
+              IconButton.filledTonal(
+                tooltip: 'Lägg till produkt',
+                onPressed: onAdd,
+                icon: const Icon(Icons.add),
+              ),
             if (onRefresh != null)
               IconButton.filledTonal(
+                tooltip: 'Uppdatera',
                 onPressed: onRefresh,
                 icon: const Icon(Icons.refresh),
               ),

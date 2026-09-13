@@ -26,6 +26,7 @@ part 'widgets/detail_helpers.dart';
 part 'dialogs/api_url_dialog.dart';
 part 'dialogs/holding_dialog.dart';
 part 'dialogs/price_alert_dialog.dart';
+part 'dialogs/add_product_dialog.dart';
 
 const bg = Color(0xFF0D1424);
 const navBg = Color(0xFF10192B);
